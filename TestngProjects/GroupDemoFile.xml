@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  
+  <test name="TestGroupings">
+  
+  <groups> 
+  
+  <!-- Definitions of the groups created in the GroupDemo.java file -->
+  
+  <define name="all">
+    <include name = "Cars"></include>
+  	<include name = "Sedan"></include>
+  	<include name = "SUV"></include>
+  	<include name = "Bikes"></include>
+  </define>
+  
+  
+  <define name="noBikes">
+  	<include name = "Cars"></include>
+  	<include name = "Sedan"></include>
+  </define>
+  
+  
+  <!--  Running the defined "all" -->
+  <run>
+	<include name = "noBikes"></include>
+  </run>
+  
+  </groups>
+  
+    <classes>
+      <class name="testGroupings.GroupDemo"/>
+    </classes>
+  </test> <!-- TestGroupings -->
+
+
+</suite> <!-- Suite -->

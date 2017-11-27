@@ -1,0 +1,40 @@
+package refresher.webservices.RestfulAPI;
+
+import static io.restassured.RestAssured.when;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+
+import org.apache.http.protocol.ResponseServer;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+import junit.framework.Assert;
+import io.restassured.*;
+
+import static io.restassured.RestAssured.given;
+
+public class APIParametersAuthorization {
+
+	
+	@Test (enabled = true)
+	public void Test01() throws URISyntaxException {
+		
+		String initialURL = "http://samples.openweathermap.org/data/2.5/weather";
+		
+		
+		URI uri = new URI("?q=London&appid=b1b15e88fa797225412429c1c50c122a1");
+		
+		//Response resp =  given().param();
+		
+		
+				
+				
+			//	when().get(uri);
+		
+		int respCode = resp.getStatusCode();
+		Assert.assertEquals(200, respCode);
+	}
+	
+	
+}

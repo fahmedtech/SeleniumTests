@@ -1,0 +1,41 @@
+package refresher.webservices.RestfulAPI;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import org.testng.annotations.Test;
+import io.restassured.response.Response;
+import junit.framework.Assert;
+
+import static io.restassured.RestAssured.*;
+
+public class WeatherAPIGetRequests {
+
+	//simple GET request for getting weather request by city name
+	//Status Code: 200 (Pass)
+	@Test
+	public void Test01() throws URISyntaxException {
+		
+		URI uri = new URI("http://samples.openweathermap.org/data/2.5/weather?q=London&appid=b1b15e88fa797225412429c1c50c122a1");
+		
+		Response resp = when().get(uri);
+		
+		int respCode = resp.getStatusCode();
+		Assert.assertEquals(respCode, 200);
+		
+		System.out.println(respCode);
+	}
+	
+	//Status Code: 401 (Client Error)
+	@Test
+	public void Test02() throws URISyntaxException {
+		
+		URI uri2 = new URI("http://samples.openweathermap.org/data/2.5/weather?q=xyz&appid");
+		
+		Response resp2 = when().get(uri2);
+		
+		int respCode2 = resp2.getStatusCode();
+		Assert.assertEquals(401, respCode2);
+		
+		System.out.println(respCode2);
+	}
+}

@@ -1,0 +1,52 @@
+package refresher.webservices.RestfulAPI;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import org.testng.annotations.Test;
+import io.restassured.response.Response;
+import junit.framework.Assert;
+import static io.restassured.RestAssured.given;
+
+public class APIParametersAuthorization {
+
+	//http://samples.openweathermap.org/data/2.5/weather?q=London&appid=b1b15e88fa797225412429c1c50c122a1
+	@Test (enabled = true)
+	public void Test01() throws URISyntaxException {
+		
+		URI uri = new URI("http://samples.openweathermap.org/data/2.5/weather");
+		
+		Response resp = given().param("q", "London")
+							   .param("appid", "b1b15e88fa797225412429c1c50c122a1")
+							   .when()
+							   .get(uri);
+		
+		int respCode = resp.getStatusCode();
+		
+		System.out.println(respCode);
+		Assert.assertEquals(200, respCode);
+	}
+	
+	//assertThat
+	@Test (enabled = true)
+	public void Test02() {
+		
+		given().param("q", "London")
+			   .param("appid", "b1b15e88fa797225412429c1c50c122a1")
+			   .when()
+			   .get("http://samples.openweathermap.org/data/2.5/weather")
+			   .then()
+			   .assertThat().statusCode(200);
+	}
+	
+	//JSON STRING
+	@Test (enabled = true)
+	public void Test03() {
+		
+		Response resp = given().param("q", "London")
+							   .param("appid", "b1b15e88fa797225412429c1c50c122a1")
+							   .when()
+							   .get("http://samples.openweathermap.org/data/2.5/weather");
+		
+		System.out.println(resp.asString());
+	}
+}

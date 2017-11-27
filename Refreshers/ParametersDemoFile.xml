@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+ 
+  <test name="TestCaseChrome">
+  
+  <!-- Code implementation -->
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+  <class name="testNGscripts.ParametersDemo" />
+  </classes>
+  <!-- End of Code implementation -->
+  
+  </test> <!-- Test -->
+
+
+  <test name="TestCaseFirefox">
+  
+  <!-- Code implementation -->
+  <parameter name="browser" value="firefox"></parameter>
+  <classes>
+  <class name="testNGscripts.ParametersDemo" />
+  </classes>
+  <!-- End of Code implementation -->
+  
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->

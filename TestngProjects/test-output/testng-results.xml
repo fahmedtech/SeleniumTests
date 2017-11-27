@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="134" started-at="2017-10-27T19:51:35Z" finished-at="2017-10-27T19:51:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="134" started-at="2017-10-27T19:51:35Z" finished-at="2017-10-27T19:51:35Z">
+      <class name="testingSites.AnnotationsTestNG">
+        <test-method status="PASS" signature="beforeSuiteMethod()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="beforeSuiteMethod" is-config="true" duration-ms="34" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuiteMethod -->
+        <test-method status="PASS" signature="bTest()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="bTest" is-config="true" duration-ms="1" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeM()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="beforeM" is-config="true" duration-ms="1" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeM -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="test1" duration-ms="30" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterm()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="afterm" is-config="true" duration-ms="1" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterm -->
+        <test-method status="PASS" signature="beforeM()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="beforeM" is-config="true" duration-ms="1" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeM -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="test2" duration-ms="8" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterm()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="afterm" is-config="true" duration-ms="2" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterm -->
+        <test-method status="PASS" signature="afterC()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="afterC" is-config="true" duration-ms="3" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterC -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="afterTest" is-config="true" duration-ms="1" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:testingSites.AnnotationsTestNG@61832929]" name="aftersuite" is-config="true" duration-ms="1" started-at="2017-10-27T14:51:35Z" finished-at="2017-10-27T14:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+      </class> <!-- testingSites.AnnotationsTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

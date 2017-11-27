@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;artifact&apos; to &apos;artifactExcel&apos;&#x0D;&#x0A;- Original element: &apos;artifact&apos;&#x0D;&#x0A;- Renamed element: &apos;artifact&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;artifact&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=artifact" name="artifactExcel" references="true" stamp="1506632481700" version="1.0"/>
+</session>
